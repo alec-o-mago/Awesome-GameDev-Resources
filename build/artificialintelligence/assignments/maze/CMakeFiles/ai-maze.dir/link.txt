@@ -1,0 +1,1 @@
+/emsdk/upstream/emscripten/em++  -Oz -s WASM=2 @CMakeFiles/ai-maze.dir/objects1.rsp -o ../../../out/ai-maze.js 

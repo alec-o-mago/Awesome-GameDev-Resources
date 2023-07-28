@@ -1,0 +1,38 @@
+# Configuration for Doxygen for use with CMake
+# Only options that deviate from the default are included
+# To create a new Doxyfile containing all available options, call `doxygen -g`
+
+# Get Project name and version from CMake
+PROJECT_NAME = Awesome GameDev Resources
+PROJECT_NUMBER = 
+
+# Add sources
+INPUT = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../README.md /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../include /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../documentation/pages /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../intro /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../portfolio /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../artificialintelligence
+FILE_PATTERNS = *.c *.cpp *.h *.hpp *.md *.dox
+EXTRACT_ALL = YES
+RECURSIVE = YES
+OUTPUT_DIRECTORY = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/build/documentation/doxygen
+
+# Use the README as a main page
+USE_MDFILE_AS_MAINPAGE = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/../README.md
+
+# set relative include paths
+FULL_PATH_NAMES = NO
+STRIP_FROM_PATH = /__w/Awesome-GameDev-Resources/Awesome-GameDev-Resources/documentation/..
+
+# We use m.css to generate the html documentation, so we only need XML output
+GENERATE_XML = YES
+GENERATE_HTML = NO
+GENERATE_LATEX = NO
+XML_PROGRAMLISTING = NO
+CREATE_SUBDIRS = NO
+
+# Include all directories, files and namespaces in the documentation
+# Disable to include only explicitly documented objects
+M_SHOW_UNDOCUMENTED = NO
+
+STRIP_CODE_COMMENTS    = NO
+GENERATE_TODOLIST      = YES
+SHOW_NAMESPACES        = NO
+SHOW_FILES             = NO
+SHOW_USED_FILES        = NO
